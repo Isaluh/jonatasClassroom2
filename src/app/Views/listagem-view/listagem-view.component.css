@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #14b8a6;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input{
+    width: 100%;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #334155;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+input:focus{
+    border: 1px solid #5eead4;
+}
