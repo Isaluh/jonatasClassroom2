@@ -33,6 +33,13 @@ export class ListagemViewComponent {
     }
   }
 
+  excluirContato(id: number | null){
+    if(id != null){
+      this.contatoService.excluirContato(id);
+      this.contatos = this.contatoService.getContatos()
+    }
+  }
+
   cancelar(){
     this.contatoEdit = { id: null, nome: '', telefone: null, email: '', profissao: '' };
     this.statusEdit = 0;

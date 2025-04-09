@@ -26,7 +26,11 @@ export class ContatoServiceService {
     } else {
       alert('Contato não encontrado para edição');
     }
-}
+  }
+
+  excluirContato(id: number) {
+    this.contatos = this.contatos.filter(contato => contato.id !== id);
+  }
 
   constructor() { }
 }
